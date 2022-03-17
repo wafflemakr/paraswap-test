@@ -21,19 +21,23 @@
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
     "@nomiclabs/hardhat-etherscan": "2.1.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "chai": "4.3.4",
-    "ethereum-waffle": "3.4.0",
-    "ethers": "5.4.6",
-    "hardhat": "2.4.3",
-    "hardhat-deploy": "0.8.6",
+    "bignumber.js": "^9.0.2",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.6",
+    "hardhat": "^2.4.3",
+    "hardhat-deploy": "^0.8.6",
     "hardhat-gas-reporter": "^1.0.4",
-    "prettier": "2.2.1",
-    "prettier-plugin-solidity": "1.0.0-beta.8",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.8",
     "solidity-coverage": "^0.7.17"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "4.1.0",
-    "@openzeppelin/contracts-upgradeable": "4.3.2",
-    "dotenv": "8.2.0"
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts-upgradeable": "^4.3.2",
+    "axios": "^0.26.1",
+    "dotenv": "^8.2.0",
+    "paraswap": "^5.1.0",
+    "paraswap-core": "^1.0.2"
   }
 }

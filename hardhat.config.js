@@ -11,29 +11,13 @@ require("solidity-coverage");
 require("hardhat-gas-reporter");
 require("chai");
 
-let mnemonic = process.env.MNEMONIC
-  ? process.env.MNEMONIC
-  : "test test test test test test test test test test test test";
-
 module.exports = {
   networks: {
     hardhat: {
       // Uncomment these lines to use mainnet fork
-      // forking: {
-      //   url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY_KEY}`,
-      //   blockNumber: 11589707,
-      // },
-    },
-    rinkeby: {
-      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_KEY}`,
-      accounts: {
-        mnemonic,
-      },
-    },
-    live: {
-      url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY_KEY}`,
-      accounts: {
-        mnemonic,
+      forking: {
+        url: process.env.RPC_URL,
+        blockNumber: 26029579,
       },
     },
   },
@@ -53,7 +37,7 @@ module.exports = {
     excludeContracts: ["mocks/"],
   },
   solidity: {
-    version: "0.8.7",
+    version: "0.8.11",
     settings: {
       optimizer: {
         enabled: true,
